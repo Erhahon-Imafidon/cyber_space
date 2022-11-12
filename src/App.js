@@ -1,23 +1,21 @@
-import './App.css'
-import Navbar from './components/Navbar';
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home';
 import Document from './pages/Document';
 import Pricing from './pages/Pricing';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './Layout';
 
 
 function App() {
   return (
-    <div className="min-h-screen w-full relative">
-    <BrowserRouter>
-      <Navbar />
+    <>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/documentation' element={<Document />} />
-        <Route path='/pricing' element={<Pricing />} />
+        <Route path='/' element={<Layout/>}>
+          <Route index element={<Home />} />
+          <Route path='/documention' element={<Document />} />
+          <Route path='/pricing' element={<Pricing />} />
+        </Route>
       </Routes>
-    </BrowserRouter>
-    </div>
+      </>
   );
 }
 

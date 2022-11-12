@@ -6,34 +6,37 @@ const Navbar = () => {
   const menuItems = [
     {
       names: 'Integration',
-      path: '/',
+      url: '/',
     },
     {
       names: 'Documentation',
-      path: '/documentation',
+      url: '/document',
     },
     {
       names: 'Pricing',
-      path: '/pricing',
+      url: '/pricing',
     },
   ]
 
   return (
-    <div className='w-full absolute'>
+    <div className='w-full'>
       <div className='flex  max-w-[1240px] justify-between py-10 items-center text-white'>
         <div className='w-[154px] text-center font-normal text-[34.413px] cursor-pointer ml-20'>
-        Cyberpay
+        <Link to='/pricing'>Cyberpay</Link>
         </div>
         
-        <ul className='flex mt-2 gap-x-10 text-center items-center font-normal text-[16px]'>
+        <ul className='flex mt-2  gap-x-10 text-center items-center font-normal text-[16px]'>
             {
-              menuItems.map((item, index) => (
-                <li key={index} className='mx-4'>
-                  <Link to={item.path}>{item.names}</Link>
-                </li>
-              ))
+              menuItems.map((item, index) => {
+                const { names, link } = item
+                return (
+                  <Link to={link} key={index}>
+                    <li className='mx-4 cursor-pointer'>{names}</li>
+                  </Link>
+                )
+              })
             }
-            <button className='text-base cursor-pointer font-[Manrope]'>
+            <button className='text-base cursor-pointer font-[Manrope]' style={{cursor: 'pointer'}}>
               Login
             </button>
 

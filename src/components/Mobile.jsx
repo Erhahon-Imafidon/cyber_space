@@ -10,9 +10,9 @@ const Mobile = () => {
     }
 
   return (
-    <div className='w-full mx-auto -bottom-[250%] py-20 absolute flex flex-col gap-10 items-center'> 
-      <section className='bg-white flex items-start justify-start  rounded-lg h-[300px] px-20 w-[90%]'>
-        <div className='ml-9 mt-10 w-1/2'>
+    <div className='w-full  items-center'>
+      <section className='bg-white flex items-start justify-start mx-auto  flex-col md:flex-row rounded-lg h-40-rem md:h-10-rem md:px-20 px-10 w-[90%]'>
+        <div className='md:ml-10 mt-10 w-full md:w-2/3'>
         <h1 className='text-[40px] text-[#2C84C7]'>
          Download Our Mobile App
         </h1>
@@ -31,7 +31,7 @@ const Mobile = () => {
          </div>
         </div>
 
-        <div className='absolute right-[150px] -top-[60px]'>
+        <div className='right-[150px] lg:-mt-15 w-full md:w-1/3'>
             <img className='h-[600px]' src={Phone} alt="" style={phoneStyle} />
         </div>
       </section>  

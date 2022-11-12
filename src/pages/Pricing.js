@@ -17,7 +17,7 @@ const Pricing = () => {
   ]
 
   return (
-    <div className=' w-full min-h-[130%] absolute flex flex-col translate-y-[20%] justify-center items-center'>
+    <div className=' w-full min-h-screen` absolute flex flex-col translate-y-[30%] justify-center items-center'>
         <div className='w-[346px] h-272px bg-white rounded-[4px]'>
             <div className='flex items-center justify-between p-6 border-b border-[#979797]'>
               <h1 className='text-[#31414B] text-[18px] opacity-[82.16%]'>Order Summary</h1>

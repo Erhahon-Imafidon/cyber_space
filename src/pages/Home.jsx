@@ -8,14 +8,14 @@ import Ellipses from '../components/Ellipses'
 
 const Home = () => {
   return (
-    <>
-       <Payment /> 
-       <Cable />
-       <Merchant />
-       <Ellipses />
-       <Dashboard />
-       <Mobile />
-    </>
+    <div>
+        <section><Payment /></section>
+        <section><Cable /></section>
+        <section><Merchant /></section>
+        <section><Ellipses /></section>
+        <section><Dashboard /></section>
+        <section><Mobile /></section>
+    </div>
   )
 }
 

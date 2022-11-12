@@ -9,10 +9,10 @@ const Merchant = () => {
     }
 
   return (
-    <div className='w-full absolute flex flex-col justify-center items-center h-1/2 top-[900px] text-white'>
-        <div className='max-w-[50%]'>
+    <div className='w-full flex flex-col justify-center items-center h-1/2 mt-6 py-20 text-white'>
+        <div className=' md:w-1/2 w-full px-10'>
         <h1 className='text-[45px] leading-[132%]'>Monitor your activity as a Merchant & Make decision </h1>
-        <p className='mt-4'>Know how your busines is faring and set thing back to order</p>
+        <p className='mt-4'>Know how your business is faring and set thing back to order</p>
 
         <div className='h-[54px] px-4 text-left justify-around mt-6 flex items-center w-[290px]' style={bgImg}>
              <button>

@@ -38,7 +38,7 @@ const Cable = () => {
     ]
 
   return (
-    <div className='flex justify-center absolute w-full p-4 gap-4 h-[70%]  items-center top-[80%]'>
+    <div className='flex justify-center py-20 w-full p-4 gap-4 mt-6 items-center'>
             {
                 cable.map((item, index) =>(
                     <div key={index} className={`${item.background} rounded-[3px] w-[calc(100%-28px)] h-[173px] grid place-content-center`}>

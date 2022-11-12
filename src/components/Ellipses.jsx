@@ -7,7 +7,7 @@ const trans = {
 }
 
   return (
-    <div style={trans} className='absolute left-[20%] top-0 w-[1200px] h-[700px]'>
+    <div style={trans} className='absolute left-[20%] top-0 '>
         <img src={Ellipse} alt="" />
     </div>
   )

@@ -20,9 +20,9 @@ const Document = () => {
  ]
 
   return (
-    <main className='flex flex-col h-[900px] absolute top-[20%] w-full justify-center items-center'>
+    <main className='flex flex-col h-[900px]  top-[20%] w-full justify-center items-center'>
         <div className='flex text-white justify-around mt-11 h-[800px] pb-[200px]'>
-            <div className='flex flex-col absolute left-[20%]'>
+            <div className='flex flex-col left-[20%]'>
                 <div className='bg-[#1AA7E8] w-[331.68px] h-[302px] rounded-md grid place-content-center '>
                     <div className='w-64 h-64 bg-white grid place-content-center rounded-full'>
                         <img src={DstvLarge} alt="" />
@@ -37,7 +37,7 @@ const Document = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col absolute right-[20%]'>
+            <div className='flex flex-col  right-[20%]'>
                 <div>
                     <p className='text-sm'>CABLE SUBSCRITPION</p>
                     <h1 className='text-[28px] mt-1'>Dstv Cable Subscription</h1>

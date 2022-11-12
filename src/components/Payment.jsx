@@ -10,8 +10,8 @@ const Payment = () => {
     }
 
   return (
-    <div className='w-full absolute flex justify-center items-center top-[283px] text-white'>
-       <div className='h-3/4 max-w-[657px] flex flex-col justify-center items-center'>
+    <div className='w-full flex justify-center items-center  text-white'>
+       <div className='h-3/4 max-w-[657px] flex md:py-20 flex-col justify-center items-center'>
           <div className=''>
           <h1 className=' text-[50px] leading-[66px] text-center'>
                 Make payment - Whenever, <br /> wherever, with Cyberpay
